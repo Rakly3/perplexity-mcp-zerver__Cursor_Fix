@@ -196,27 +196,24 @@ By reading the documentation, you'll understand:
 ## 🗂️ File Structure
 
 ```
-perplexity-mcp-zerver/
-├── Quick Start
-│   ├── QUICK_FIX_GUIDE.md              # 5-min fix
-│   ├── quick-fix.sh                     # Bash script
-│   └── quick-fix.ps1                    # PowerShell script
+/
+├── README.md                                   # Main GitHub page
 │
-├── Complete Guides
-│   ├── HOW_TO_FIX_OUTPUTSCHEMA_ERROR.md # Full guide
-│   ├── FIX_SUMMARY.md                   # Summary
-│   └── TROUBLESHOOTING_MCP_OUTPUT_SCHEMA.md # Deep dive
+├── automated-scripts/                          # Automated fix scripts
+│   ├── quick-fix.sh                            # Bash (Mac/Linux)
+│   └── quick-fix.ps1                           # PowerShell (Windows)
 │
-├── Visual & Analysis
-│   └── FIX_EXPLANATION_DIAGRAM.md       # Flow diagrams
+├── git-patch/                                  # Git patch
+│   └── outputschema-fix.patch                  # Apply with git apply
 │
-├── Tools & Templates
-│   ├── outputschema-fix.patch           # Git patch
-│   └── GITHUB_ISSUE_TEMPLATE.md         # Issue template
-│
-└── Navigation
-    ├── DOCUMENTATION_INDEX.md           # Full index
-    └── README_FIX_DOCUMENTATION.md      # This file
+└── docs/                                       # All documentation
+    ├── README_FIX_DOCUMENTATION.md             # This file - main hub
+    ├── QUICK_FIX_GUIDE.md                      # 5-minute quick fix
+    ├── HOW_TO_FIX_OUTPUTSCHEMA_ERROR.md        # Complete guide
+    ├── FIX_SUMMARY.md                          # Executive summary
+    ├── TROUBLESHOOTING_MCP_OUTPUT_SCHEMA.md    # Deep troubleshooting
+    ├── FIX_EXPLANATION_DIAGRAM.md              # Visual diagrams
+    └── GITHUB_ISSUE_TEMPLATE.md                # Issue template
 ```
 
 ---
@@ -300,3 +297,4 @@ After applying this fix:
 
 *Last Updated: September 30, 2025*  
 *For the complete documentation index, see [DOCUMENTATION_INDEX.md](./DOCUMENTATION_INDEX.md)*
+
